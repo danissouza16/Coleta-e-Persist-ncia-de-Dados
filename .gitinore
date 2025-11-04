@@ -1,0 +1,28 @@
+# Arquivos gerados pelos scripts de persistência em C
+*.db
+*.db-journal
+*.bin
+*.txt
+*.csv
+
+# Arquivo de dados gerado pelo script de persistência em Python
+db.json
+
+# Volume de dados gerado pelo Docker/MongoDB
+mongo-data/
+
+# -- Arquivos de Compilação (C) --
+*.o
+*.out
+*.exe
+
+# -- Arquivos de Cache (Python) --
+__pycache__/
+*.pyc
+
+# -- Chaves de API e Variáveis de Ambiente --
+.env
+
+# -- Arquivos de Sistema Operacional/IDE --
+.DS_Store
+.vscode/
