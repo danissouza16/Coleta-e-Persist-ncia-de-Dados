@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Editar Filme</h1>
+    <form method="post" action="{{ url_for('update', id=movie['id']) }}">
+        {{ form.hidden_tag() }}
+        <div>
+            {{ form.title.label }}
+            {{ form.title(size=32) }}
+        </div>
+        <div>
+            {{ form.description.label }}
+            {{ form.description(rows=5) }}
+        </div>
+        <div>
+            {{ form.image.label }}
+            {{ form.image(size=32) }}
+        </div>
+        <button type="submit">Salvar Alterações</button>
+        <a href="{{ url_for('index') }}"><button type="button">Cancelar</button></a>
+    </form>
+{% endblock %}
